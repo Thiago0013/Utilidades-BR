@@ -1,6 +1,9 @@
 import {Header} from "@/components/Header";
 import {Footer} from "@/components/Footer";
+import {MapPinned} from 'lucide-react';
+
 import Link from "next/link";
+import {Cards} from "@/components/Cards";
 
 export default function Home() {
   return (
@@ -21,8 +24,16 @@ export default function Home() {
                     <Link className={'w-18 text-gray-600 hover:text-blue-600'} href={'/consultas'}>Consultas</Link>
                 </nav>
             </aside>
-            <section className="flex-1 bg-blue-800 min-h-[400px] text-white p-4 rounded">
-                Conteúdo Principal
+            <section className="flex-1 min-h-[400px] text-white p-4 rounded">
+                <div>
+                    <h1 className={'text-4xl text-gray-900'}>Ferramentas gratuitas para seu dia a dia</h1>
+                    <p className={'text-gray-900 mt-3'}>Calculos e consultas rápidas sem enrolação.</p>
+                </div>
+                <div className={'flex gap-4 mt-8'}>
+                    <Cards icon={MapPinned} title={"teste"} description={"descrição"}/>
+                    <Cards icon={MapPinned} title={"teste"} description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, odio."}/>
+                    <Cards icon={MapPinned} title={"teste"} description={"descrição"}/>
+                </div>
             </section>
 
             <aside className="w-full md:w-64 bg-amber-200 min-h-[200px] flex justify-center items-center rounded">
