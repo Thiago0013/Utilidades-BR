@@ -6,9 +6,10 @@ type NavegationProps = {
 
 export function Navegation({ name }: NavegationProps) {
     const links = [
+        { id: 'ferramentas', label: 'Todas as Ferramentas', href: '/ferramentas', width: 'w-22' },
         { id: 'trabalhistas', label: 'Trabalhistas', href: '/trabalhistas', width: 'w-22' },
         { id: 'saude',        label: 'Saúde',        href: '/saude',        width: 'w-15' },
-        { id: 'consultas',    label: 'Consultas',    href: '/consultas',    width: 'w-18' },
+        { id: 'consultas',    label: 'Consultas',    href: '/consultas',    width: 'w-18' }
     ];
 
     return (

@@ -13,7 +13,7 @@ export default function Home() {
         <main className="flex flex-col md:flex-row justify-center p-4 md:p-8 gap-6 max-w-[1200px] mx-auto">
 
             <aside className="w-full md:w-[250px] shrink-0 flex flex-col gap-3.5 p-4">
-                <Navegation name={'trabalhistas'}/>
+                <Navegation name={'Todas as ferramentas'}/>
             </aside>
             <section className=" flex-1 min-h-[400px] text-white p-4 rounded">
                 <div>
